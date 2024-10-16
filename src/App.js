@@ -6,27 +6,27 @@ const App = () => {
     {
       id:1,
       title: 'Hats',
-      ImageUrl:'https://i.ibb.co/cvpntL1/hats.png',
+      ImageUrl:'https://fcdrycleaners.com/wp-content/uploads/2023/09/Do-Dry-Cleaners-Clean-Hats-A-Complete-Guide-To-Hat-Cleaning.jpg',
     },
     {
       id:2,
       title: 'Jackets',
-      ImageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+      ImageUrl: 'https://media.cnn.com/api/v1/images/stellar/prod/best-denim-jackets-cnnu-1.jpg?c=16x9&q=h_833,w_1480,c_fill',
     },
     {
       id:3,
       title: 'Sneakers',
-      ImageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+      ImageUrl: 'https://caval.fr/cdn/shop/collections/mega-menu-sneakers-category_5f9b5627-dcbf-4bb0-913a-a4d05dd0b542.jpg?v=1712147593',
     },
     {
       id:4,
       title: 'Womens',
-      ImageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+      ImageUrl: 'https://assets.vogue.com/photos/64c2bbe1d9567128b71301f8/master/w_2560%2Cc_limit/NAP_HSCampaign_FinalRetouch_CrisFragkou_7.jpg',
     },
     {
       id:5,
       title: 'Mens',
-      ImageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+      ImageUrl: 'https://cdn.shopify.com/s/files/1/0022/0620/3948/files/Le_style_casual_chic.jpg?v=1698246412',
     },
   ];
   
