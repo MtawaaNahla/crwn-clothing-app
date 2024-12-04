@@ -1,56 +1,46 @@
-.button-container {
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    border-radius: 5px;
-    
-    // Par défaut, couleur du fond et du texte
-    background-color: rgb(178, 177, 252);
-    color: blue;
-    
-    &:hover {
-      background-color: #0056b3;
-      transform: scale(1.05);
-    }
-  
-    &:focus {
-      outline: none;
-      box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
-    }
-  
-    &:disabled {
-      background-color: #c6c6c6;
-      cursor: not-allowed;
-    }
-  }
-  
-  // Style pour le bouton Google
-  .google-sign_in {
-    background-color: blue;
-    color: white;
-    
-    &:hover {
-      background-color: blue;
-    }
-    
-    &.disabled {
-      background-color: blue;
-      color: #c6c6c6;
-    }
-  }
-  
-  // Style pour le bouton inversé
-  .inverted {
-    background-color: white;
-    color: #007bff;
-    border: 2px solid #007bff;
-    
-    &:hover {
-      background-color: #007bff;
-      color: white;
-    }
-  }
-  
+.button-container { 
+  min-width: 165px; 
+  width: auto; 
+  height: 50px; 
+  letter-spacing: 0.5px; 
+  line-height: 50px; 
+  padding: 0 35px 0 35px; 
+  font-size: 15px; 
+  background-color: black; 
+  color: white; 
+  text-transform: uppercase; 
+  font-family: 'Open Sans Condensed'; 
+  font-weight: bolder; 
+  border: none; 
+  cursor: pointer; 
+  display: flex; 
+  justify-content: center; 
+ 
+  &:hover { 
+    background-color: white; 
+    color: black; 
+    border: 1px solid black; 
+  } 
+ 
+  &.google-sign-in { 
+    background-color: #4285f4; 
+    color: white; 
+ 
+    &:hover { 
+      background-color: #357ae8; 
+      border: none; 
+    } 
+  } 
+ 
+  &.inverted { 
+    background-color: white; 
+    color: black; 
+    border: 1px solid black; 
+ 
+    &:hover { 
+      background-color: black; 
+      color: white; 
+      border: none; 
+    } 
+  } 
+}

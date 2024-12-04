@@ -6,6 +6,8 @@ import {
     GoogleAuthProvider,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
+    signOut,
+    onAuthStateChanged,
 } from 'firebase/auth' ;
 
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore' ;
@@ -24,7 +26,6 @@ const firebaseConfig = {
   const firebaseApp = initializeApp(firebaseConfig);
 
   const googleProvider = new GoogleAuthProvider();
-
   googleProvider.setCustomParameters({
     prompt:"select_account"
   });
@@ -40,11 +41,12 @@ const firebaseConfig = {
     additionalInformation = {}
   ) => {
     if(!userAuth)  return;
+
      const userDocRef = doc(db, 'users',userAuth.uid );
 
      const userSnapshot = await getDoc(userDocRef);
 
-     if(!userSnapshot.exixts()){
+     if(!userSnapshot.exists()){
         const { displayName, email } = userAuth;
         const createAt = new Date();
 
@@ -76,4 +78,18 @@ const firebaseConfig = {
     return await signInWithEmailAndPassword (auth , email , password);
   };
 
+export const signOutUser = async () => await signOut(auth);
 
+export const onAuthStateChangedListener = (callBack) => 
+  onAuthStateChanged(auth, callBack );
+
+
+/**
+ * 
+ * {
+ * next: callback,
+ * error: errorCallback,
+ * complete:  completedCallback
+ * }
+ * 
+ */
